@@ -39,7 +39,7 @@ h1 {
 .block-flex {
     display: flex;
     border: solid lightslategrey;
-    flex-direction:column;
+    flex-direction: column;
 }
 
 .blocks{
