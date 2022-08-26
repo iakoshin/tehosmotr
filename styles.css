@@ -4,17 +4,22 @@
     box-sizing: border-box;
 }
 
-h1 {
+.main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
+    align-items:center;
+    justify-content: space-between;
     width: 100%;
-    height: 120px;
+    height: auto;
     background: lightgray;
-    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+    margin-top: auto;
+    background-color: lightgrey;
     color: lightseagreen;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid lightslategray;
+    position: fixed;
+    opacity: 0.5;
 }
 
 .info{
@@ -22,8 +27,8 @@ h1 {
     justify-content: center;
     width: 100%;
     background-color:white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -33,17 +38,19 @@ h1 {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    align-items:flex-start;
+    align-items:center;
+    justify-content:center;
 }
 
 .block-flex {
     display: flex;
-    border: solid lightslategrey;
     flex-direction: column;
+    align-items: center;
 }
 
 .blocks{
     display: flex;
+    justify-content: space-between;
 }
 
 .payment{
@@ -127,6 +134,7 @@ form {
     padding: 10px 40px;
     cursor: pointer;
     margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .form-row button:hover {
@@ -143,6 +151,7 @@ form {
     background-color:lightgray;
     justify-content: space-around;
     align-items: center;
+    border: solid lightslategray;
   }
 
   p{
@@ -162,4 +171,19 @@ form {
         justify-content: center;
         align-items: center;
     }
+}
+
+@media only screen and (min-width: 600px) {
+  .pics{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .block-flex {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 }
